@@ -8,6 +8,12 @@ button {
         color: white;
 }
 
+#powerButton {
+	background-color: Red;
+	width: 360px;
+	height: 180px;
+}
+
 #gpio17.LOW {
         background-color: Black;
 }
