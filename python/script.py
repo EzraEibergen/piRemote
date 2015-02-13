@@ -57,3 +57,19 @@ def setLightHours(on, off):
 @webiopi.macro
 def tvPower():
     os.system("irsend SEND_ONCE Sharp KEY_POWER")
+
+@webiopi.macro
+def tvVolumeUp():
+    os.system("irsend SEND_ONCE Sharp KEY_VOLUMEUP")
+
+@webiopi.macro
+def tvVolumeDown():
+    os.system("irsend SEND_ONCE Sharp KEY_VOLUMEDOWN")
+
+@webiopi.macro
+def tvChannelUp():
+    os.system("irsend SEND_ONCE Sharp KEY_CHANNELUP")
+
+@webiopi.macro
+def tvChannelDown():
+    os.system("irsend SEND_ONCE Sharp KEY_CHANNELDOWN")

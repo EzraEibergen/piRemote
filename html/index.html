@@ -31,14 +31,23 @@
                 // Append the button to the controls box using a jQuery function
                 $("#controls").append(sendButton);
 
-		//Create a power button to call the tvPower macro
-		var powerButton = webiopi().createButton("powerButton", "Power", function() {
-		    //Call Macro
-		    webiopi().callMacro("tvPower", [], updateLightHours);
-		});
+								//Create a power button to call the tvPower macro
+								var powerButton = webiopi().createButton("powerButton", "Power", function() {
+								    //Call Macro
+								    webiopi().callMacro("tvPower", [], updateLightHours);
+								});
 
-		// Append the button to the controls box
-		$("#controls").append(powerButton);
+								// Append the button to the controls box
+								$("#controls").append(powerButton);
+								
+								//Create a power button to call the tvVolumeUp macro
+								var volUpButton = webiopi().createButton("volUpButton", "VolUp", function() {
+								    //Call Macro
+								    webiopi().callMacro("tvVolumeUp", [], updateLightHours);
+								});
+
+								// Append the button to the controls box
+								$("#controls").append(volUpButton);
 
                 // Create a "Light" labeled button for GPIO 17
                 var button = webiopi().createGPIOButton(17, "Light");
