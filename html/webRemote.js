@@ -6,7 +6,7 @@ webiopi().ready(function() {
 				});
 
 				// Append the button to the controls box
-				$("#controls").append(powerButton);
+				$("#power").append(powerButton);
 				
 				//Create a power button to call the tvVolumeUp macro
 				var volUpButton = webiopi().createButton("volUpButton", "VolUp", function() {
